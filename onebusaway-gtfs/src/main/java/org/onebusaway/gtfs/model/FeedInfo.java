@@ -30,6 +30,8 @@ public final class FeedInfo extends IdentityBean<String> {
 
   private String publisherName;
 
+  // this being optional is non standard
+  @CsvField(optional = true)
   private String publisherUrl;
 
   private String lang;
